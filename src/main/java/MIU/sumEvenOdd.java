@@ -1,5 +1,4 @@
 package MIU;
-
 /*
 Question 2
 Write a function that takes an array of integers as an argument and returns a
@@ -26,5 +25,26 @@ Examples:
 
  */
 
-public class sumEvenOdd {
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+
+public class SumEvenOdd {
+    public static void main(String[] args) {
+        SumEvenOdd sum = new SumEvenOdd();
+
+    }
+
+    public int calculateSum(int[] nums) {
+        int[] res = new int[]{0,0};
+        for(int num: nums) {
+            if (num % 2 == 0) {
+                res[1] = res[1] + num;
+            } else {
+                res[0] = res[0] + num;
+            }
+        }
+
+        return res[0] - res[1];
+    }
 }
