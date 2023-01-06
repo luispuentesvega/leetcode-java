@@ -44,7 +44,6 @@ public class SumEvenOdd {
                 res[0] = res[0] + num;
             }
         }
-
         return res[0] - res[1];
     }
 }
