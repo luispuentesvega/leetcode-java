@@ -52,8 +52,12 @@ public class Question3 {
         Question3 q3 = new Question3();
         char[] a = new char[]{'a','b','c'};
         int start = 0;
-        int len = 4;
-        System.out.println(q3.arrayContaining(a, start, len));
+        int len = 1;
+        ArrayList<String> s = q3.arrayContaining(a, start, len);
+        System.out.println(s);
+        for(String b: s) {
+            System.out.println(b);
+        }
     }
 
     public static boolean isValidIndex(char[] arr, int index) {
@@ -65,7 +69,7 @@ public class Question3 {
 
         int length = len - 1;
         char[] myChar = new char[len];
-        System.out.println(myChar.toString());
+//        System.out.println(myChar.toString());
 
         if (!isValidIndex(a, start)) {
             return null;
@@ -75,7 +79,7 @@ public class Question3 {
         }
 
         int index = 0;
-        for (int i = start; i <= length; i++) {
+        for (int i = start; i <= x; i++) {
             myChar[index] = a[i];
             index++;
         }
