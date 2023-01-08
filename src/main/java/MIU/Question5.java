@@ -42,6 +42,7 @@ public class Question5 {
     public int[] f(int[] first, int[] second) {
         // if first array is null or its length is zero -> return null
         // if second array is null or its length is zero -> return null
+        //
 
     }
 }
