@@ -79,7 +79,7 @@ public class Question3 {
         }
 
         int index = 0;
-        for (int i = start; i <= x; i++) {
+        for (int i = start; i <= a.length; i++) {
             myChar[index] = a[i];
             index++;
         }
